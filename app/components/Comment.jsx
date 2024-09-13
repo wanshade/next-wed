@@ -84,7 +84,7 @@ const Comments = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto mt-16 p-6 bg-white rounded-lg shadow-md">
+    <div className="max-w-4xl mx-auto mt-16 p-6 bg-white rounded-lg shadow-md sm:bg-white text-black">
       <h2 className="text-2xl font-semibold mb-6">Ucapan & Doa</h2>
 
       {/* Comments List */}
