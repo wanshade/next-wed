@@ -68,7 +68,7 @@ const Wedding = () => {
       </div>
 
       {/* Additional Content */}
-      <div className="bg-gray-100 py-16 px-4 text-center">
+      <div className="bg-gray-100 py-16 px-4 text-center text-black">
         <h1 className="text-xl font-semibold mb-4">
           بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
         </h1>
