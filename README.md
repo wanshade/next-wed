@@ -68,7 +68,8 @@ This will create a `prisma` folder and a `schema.prisma` file in your project.
 
 Edit the `prisma/schema.prisma` file to define your database models. For example:
 
-```generator client {
+```
+generator client {
   provider = "prisma-client-js"
 }
 
