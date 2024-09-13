@@ -1,65 +1,74 @@
-# Proyek Next.js dengan Prisma
+# Next.js Project with Prisma Integration
 
-Ini adalah proyek Next.js yang terintegrasi dengan Prisma, ORM (Object-Relational Mapping) yang memungkinkan manajemen database dengan efisien.
+This project demonstrates the integration of Next.js with Prisma, an efficient Object-Relational Mapping (ORM) tool for database management.
 
-## Memulai
+## Getting Started
 
-### 1. Instalasi Dependencies
+### 1. Install Dependencies
 
-Pertama-tama, install dependencies yang diperlukan:
+First, install the necessary dependencies:
 
 ```bash
 npm install
-# atau
+# or
 yarn install
-# atau
+# or
 pnpm install
-# atau
+# or
 bun install
-2. Konfigurasi Variabel Lingkungan
-Buat file .env di root proyek Anda dan tambahkan konfigurasi berikut:
+```
 
-env
-Copy code
+### 2. Configure Environment Variables
+
+Create a `.env` file in the project root and add the following configuration:
+
+```env
 DATABASE_URL="postgresql://user:password@localhost:5432/mydatabase"
-Gantilah user, password, localhost, 5432, dan mydatabase sesuai dengan pengaturan database PostgreSQL Anda.
+```
 
-3. Setup Prisma
+Replace `user`, `password`, `localhost`, `5432`, and `mydatabase` with your PostgreSQL database settings.
+
+### 3. Set Up Prisma
+
 Install Prisma Client:
 
-bash
-Copy code
+```bash
 npm install @prisma/client
-# atau
+# or
 yarn add @prisma/client
-# atau
+# or
 pnpm add @prisma/client
-# atau
+# or
 bun add @prisma/client
-Install Prisma CLI:
+```
 
-bash
-Copy code
+Install Prisma CLI as a development dependency:
+
+```bash
 npm install prisma --save-dev
-# atau
+# or
 yarn add prisma --dev
-# atau
+# or
 pnpm add prisma --dev
-# atau
+# or
 bun add prisma --dev
-4. Inisialisasi Prisma
-Jalankan perintah berikut untuk menginisialisasi Prisma:
+```
 
-bash
-Copy code
+### 4. Initialize Prisma
+
+Run the following command to initialize Prisma:
+
+```bash
 npx prisma init
-Perintah ini akan membuat folder prisma dan file schema.prisma di proyek Anda.
+```
 
-5. Konfigurasi Schema Prisma
-Edit file prisma/schema.prisma untuk mendefinisikan model-model database Anda. Contoh:
+This will create a `prisma` folder and a `schema.prisma` file in your project.
 
-prisma
-Copy code
+### 5. Configure Prisma Schema
+
+Edit the `prisma/schema.prisma` file to define your database models. For example:
+
+```prisma
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
@@ -74,41 +83,50 @@ model User {
   name  String
   email String @unique
 }
-6. Migrasi Database
-Setelah mengedit schema, jalankan perintah berikut untuk membuat dan menerapkan migrasi:
+```
 
-bash
-Copy code
+### 6. Migrate Database
+
+After editing the schema, run the following command to create and apply migrations:
+
+```bash
 npx prisma migrate dev --name init
-7. Generate Prisma Client
-Generate Prisma Client dengan perintah berikut:
+```
 
-bash
-Copy code
+### 7. Generate Prisma Client
+
+Generate the Prisma Client with this command:
+
+```bash
 npx prisma generate
-Menjalankan Server Development
-Jalankan server development dengan perintah berikut:
+```
 
-bash
-Copy code
+## Running the Development Server
+
+Start the development server with:
+
+```bash
 npm run dev
-# atau
+# or
 yarn dev
-# atau
+# or
 pnpm dev
-# atau
+# or
 bun dev
-Buka http://localhost:3000 di browser untuk melihat hasilnya.
+```
 
-Pelajari Lebih Lanjut
-Untuk mempelajari lebih lanjut tentang Next.js, kunjungi:
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-Dokumentasi Next.js - Pelajari fitur dan API Next.js.
-Pelajari Next.js - Tutorial interaktif Next.js.
-Untuk Prisma, kunjungi:
+## Learn More
 
-Dokumentasi Prisma - Pelajari tentang Prisma ORM.
-Deploy di Vercel
-Cara yang paling mudah untuk melakukan deploy aplikasi Next.js Anda adalah dengan menggunakan Vercel dari pencipta Next.js.
+To learn more about Next.js and Prisma, check out the following resources:
 
-Lihat dokumentasi deployment Next.js untuk informasi lebih lanjut.
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - An interactive Next.js tutorial.
+- [Prisma Documentation](https://www.prisma.io/docs) - Learn about Prisma ORM.
+
+## Deployment
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
