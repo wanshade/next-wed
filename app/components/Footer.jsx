@@ -199,8 +199,7 @@ const Footer = () => {
           </button>
         )}
         <audio ref={audioRef} loop>
-          <source src="/app/assets/music.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          <source src="https://github.com/wanshade/next-wed/blob/main/app/assets/music.mp3?raw=true" type="audio/mpeg" />
         </audio>
       </div>
     </footer>
