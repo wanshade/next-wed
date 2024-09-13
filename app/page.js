@@ -7,7 +7,7 @@ export default function Home() {
 
       <div className="relative z-10 flex items-center justify-center min-h-screen overflow-hidden">
         <div className="text-center space-y-6 p-8 bg-white shadow-lg rounded-2xl w-[400px] h-[600px] overflow-hidden">
-          <h1 className="text-4xl">The Wedding Of</h1>
+          <h1 className="text-4xl text-black">The Wedding Of</h1>
           <div className="mx-auto bg-slate-700 w-[300px] h-[300px] rounded-full flex items-center justify-center">
             <img
               src="https://i.ibb.co.com/VVqSBmD/bg.png"
@@ -15,7 +15,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-4xl">Karina & Wawan </p>
+          <p className="text-4xl text-black">Karina & Wawan </p>
 
           <Link href="/wedding">
             <button className="mt-10 px-6 py-3 bg-stone-100 text-black font-semibold rounded-lg shadow-lg flex items-center justify-center space-x-2 mx-auto transition-colors duration-300 hover:bg-slate-700 hover:text-white">
