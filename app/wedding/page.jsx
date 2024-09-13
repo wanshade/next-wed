@@ -17,7 +17,7 @@ const Wedding = () => {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center p-6 bg-white bg-opacity-80 rounded-lg shadow-lg max-w-lg mx-auto">
-          <h1 className="font-sora text-3xl mb-6">Undangan Pernikahan</h1>
+          <h1 className="text-3xl mb-6 text-black">Undangan Pernikahan</h1>
           <div className="bg-slate-700 w-[300px] h-[300px] rounded-full flex items-center justify-center mb-6 overflow-hidden">
             <img
               src="https://i.ibb.co.com/VVqSBmD/bg.png"
@@ -25,8 +25,8 @@ const Wedding = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="font-sora text-2xl mb-4">Karina & Wawan</p>
-          <p className="font-sora text-xl mb-6">Rabu, 15 Maret 2025</p>
+          <p className="text-2xl mb-4 text-black">Karina & Wawan</p>
+          <p className="text-xl mb-6 text-black">Rabu, 15 Maret 2025</p>
           <button className="px-6 py-3 bg-stone-100 text-black font-semibold rounded-lg shadow-lg flex items-center justify-center space-x-2 transition-colors duration-300 hover:bg-slate-700 hover:text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -72,8 +72,10 @@ const Wedding = () => {
         <h1 className="text-xl font-semibold mb-4">
           بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
         </h1>
-        <p className="mb-4">Assalamualaikum Warahmatullahi Wabarakatuh</p>
-        <p className="mb-8">
+        <p className="mb-4 text-black">
+          Assalamualaikum Warahmatullahi Wabarakatuh
+        </p>
+        <p className="mb-8 text-black">
           Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i
           serta kerabat sekalian untuk menghadiri acara pernikahan kami:
         </p>
@@ -86,11 +88,11 @@ const Wedding = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-lg font-semibold">Wawan Darmawan</p>
-          <p>Putra</p>
-          <p>Bapak-Ibu</p>
+          <p className="text-lg font-semibold text-black">Wawan Darmawan</p>
+          <p className="text-black">Putra</p>
+          <p className="text-black">Bapak-Ibu</p>
         </div>
-        <p className="text-3xl font-semibold my-2">&</p>
+        <p className="text-3xl font-semibold my-2 text-black">&</p>
         <div className="flex flex-col items-center mb-8">
           <div className="w-[300px] h-[300px] rounded-full mb-6 overflow-hidden">
             <img
@@ -99,38 +101,40 @@ const Wedding = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-lg font-semibold">Karina Aespa</p>
-          <p>Putri</p>
-          <p>Bapak-Ibu</p>
+          <p className="text-lg font-semibold text-black">Karina Aespa</p>
+          <p className="text-black">Putri</p>
+          <p className="text-black">Bapak-Ibu</p>
         </div>
-        <p className="mt-8 text-lg font-semibold">
+        <p className="mt-8 text-lg font-semibold text-black">
           Allah Subhanahu Wa Ta'ala berfirman :
         </p>
         <div className="text-center mx-auto max-w-3xl px-4">
-          <p className="mt-6 text-lg leading-relaxed">
+          <p className="mt-6 text-lg leading-relaxed text-black">
             "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
             pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung
             dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa
             kasih dan sayang. Sungguh, pada yang demikian itu benar-benar
             terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
           </p>
-          <p className="mt-6 text-lg font-semibold">(QS. Ar-Rum: 21)</p>
+          <p className="mt-6 text-lg font-semibold text-black">
+            (QS. Ar-Rum: 21)
+          </p>
         </div>
       </div>
 
       {/* Event Details */}
       <div className="bg-gray-200 py-16 px-4 text-center">
-        <p className="text-lg mb-2">
+        <p className="text-lg mb-2 text-black">
           Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaAllah
           kami akan menyelenggarakan acara:
         </p>
         <div className="mb-6">
-          <p className="text-xl font-semibold">Akad</p>
-          <p className="text-lg">Pukul 10.00 WIB - Selesai</p>
+          <p className="text-xl font-semibold text-black">Akad</p>
+          <p className="text-lg text-black">Pukul 10.00 WIB - Selesai</p>
         </div>
         <div className="mb-6">
-          <p className="text-xl font-semibold">Resepsi</p>
-          <p className="text-lg">Pukul 13.00 WIB - Selesai</p>
+          <p className="text-xl font-semibold text-black">Resepsi</p>
+          <p className="text-lg text-black">Pukul 13.00 WIB - Selesai</p>
         </div>
         <button className="mx-auto px-6 py-3 bg-stone-100 text-black font-semibold rounded-lg shadow-lg flex items-center justify-center space-x-2 transition-colors duration-300 hover:bg-slate-700 hover:text-white">
           <svg
@@ -151,7 +155,7 @@ const Wedding = () => {
           </svg>
           <span>Lihat Google Maps</span>
         </button>
-        <p className="mt-4 text-lg">Korea Selatan</p>
+        <p className="mt-4 text-lg text-black">Korea Selatan</p>
       </div>
       <Comments />
       <Footer />
