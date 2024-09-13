@@ -68,21 +68,22 @@ This will create a `prisma` folder and a `schema.prisma` file in your project.
 
 Edit the `prisma/schema.prisma` file to define your database models. For example:
 
-```prisma
+```generator client {
+  provider = "prisma-client-js"
+}
+
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
-generator client {
-  provider = "prisma-client-js"
+model Comment {
+  id        Int      @id @default(autoincrement())
+  text      String
+  author    String
+  createdAt DateTime @default(now())
 }
 
-model User {
-  id    Int    @id @default(autoincrement())
-  name  String
-  email String @unique
-}
 ```
 
 ### 6. Migrate Database
