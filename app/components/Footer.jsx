@@ -161,7 +161,7 @@ const Footer = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path d="M6 19L19 12L6 5V19Z" />
+              <path d="M4 4h4v16H4V4zm12 0h4v16h-4V4z" />
             </svg>
           ) : (
             <svg
@@ -174,7 +174,7 @@ const Footer = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path d="M4 4h4v16H4V4zm12 0h4v16h-4V4z" />
+              <path d="M6 19L19 12L6 5V19Z" />
             </svg>
           )}
         </button>
@@ -199,7 +199,10 @@ const Footer = () => {
           </button>
         )}
         <audio ref={audioRef} loop>
-          <source src="https://github.com/wanshade/next-wed/blob/main/app/assets/music.mp3?raw=true" type="audio/mpeg" />
+          <source
+            src="https://github.com/wanshade/next-wed/blob/main/app/assets/music.mp3?raw=true"
+            type="audio/mpeg"
+          />
         </audio>
       </div>
     </footer>

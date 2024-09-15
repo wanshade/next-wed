@@ -1,5 +1,6 @@
 import Comments from "../components/Comment";
 import Footer from "../components/Footer";
+
 const Wedding = () => {
   return (
     <>
@@ -17,17 +18,17 @@ const Wedding = () => {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-center p-6 bg-white bg-opacity-80 rounded-lg shadow-lg max-w-lg mx-auto">
-          <h1 className="text-3xl mb-6 text-black">Undangan Pernikahan</h1>
-          <div className="bg-slate-700 w-[300px] h-[300px] rounded-full flex items-center justify-center mb-6 overflow-hidden">
+          <h1 className="text-4xl mb-6 text-black">Undangan Pernikahan</h1>
+          <div className="border border-black w-[300px] h-[300px] rounded-full flex items-center justify-center mb-6 overflow-hidden">
             <img
               src="https://i.ibb.co.com/VVqSBmD/bg.png"
               alt="Wedding background"
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-2xl mb-4 text-black">Karina & Wawan</p>
+          <h1 className="text-3xl mb-4 text-black">Karina & Wawan</h1>
           <p className="text-xl mb-6 text-black">Rabu, 15 Maret 2025</p>
-          <button className="px-6 py-3 bg-stone-100 text-black font-semibold rounded-lg shadow-lg flex items-center justify-center space-x-2 transition-colors duration-300 hover:bg-slate-700 hover:text-white">
+          <button className="px-6 py-3 bg-stone-100 text-black font-semibold rounded-lg shadow-lg flex items-center justify-center space-x-2 transition-colors duration-300 hover:bg-stone-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -47,7 +48,7 @@ const Wedding = () => {
               <path d="M10 16h4" />
               <path d="M12 14v4" />
             </svg>
-            <span>Save The Date</span>
+            <span>Simpan Tanggal</span>
           </button>
         </div>
       </div>
@@ -88,11 +89,13 @@ const Wedding = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-lg font-semibold text-black">Wawan Darmawan</p>
+          <h1 className="text-3xl font-semibold text-black">Wawan Darmawan</h1>
           <p className="text-black">Putra</p>
           <p className="text-black">Bapak-Ibu</p>
         </div>
-        <p className="text-3xl font-semibold my-2 text-black">&</p>
+        <p className="text-3xl great-vibes-regular font-semibold my-2 text-black">
+          &
+        </p>
         <div className="flex flex-col items-center mb-8">
           <div className="w-[300px] h-[300px] rounded-full mb-6 overflow-hidden">
             <img
@@ -101,7 +104,7 @@ const Wedding = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-lg font-semibold text-black">Karina Aespa</p>
+          <h1 className="text-3xl font-semibold text-black">Karina Aespa</h1>
           <p className="text-black">Putri</p>
           <p className="text-black">Bapak-Ibu</p>
         </div>
@@ -136,7 +139,7 @@ const Wedding = () => {
           <p className="text-xl font-semibold text-black">Resepsi</p>
           <p className="text-lg text-black">Pukul 13.00 WIB - Selesai</p>
         </div>
-        <button className="mx-auto px-6 py-3 bg-stone-100 text-black font-semibold rounded-lg shadow-lg flex items-center justify-center space-x-2 transition-colors duration-300 hover:bg-slate-700 hover:text-white">
+        <button className="mx-auto px-6 py-3 bg-stone-100 text-black font-semibold rounded-lg shadow-lg flex items-center justify-center space-x-2 transition-colors duration-300 hover:bg-stone-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -157,7 +160,7 @@ const Wedding = () => {
         </button>
         <p className="mt-4 text-lg text-black">Korea Selatan</p>
       </div>
-      <Comments />
+      {/* <Comments /> */}
       <Footer />
     </>
   );

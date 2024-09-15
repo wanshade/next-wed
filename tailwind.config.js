@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        invitationBg: "url('./public/images/background.jpg)",
+      },
     },
   },
   plugins: [],
