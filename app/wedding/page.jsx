@@ -160,7 +160,7 @@ const Wedding = () => {
         </button>
         <p className="mt-4 text-lg text-black">Korea Selatan</p>
       </div>
-      {/* <Comments /> */}
+      <Comments />
       <Footer />
     </>
   );
