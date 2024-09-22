@@ -8,7 +8,7 @@ const ButtonConfetti = ({ children, className, ...props }) => {
   const handleClick = () => {
     const duration = 5 * 1000; // durasi 5 detik
     const animationEnd = Date.now() + duration;
-    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 15 };
 
     const randomInRange = (min, max) => Math.random() * (max - min) + min;
 
