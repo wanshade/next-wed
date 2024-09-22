@@ -147,7 +147,7 @@ const Footer = () => {
       <div className="fixed bottom-6 right-6 flex flex-col items-center space-y-2">
         <button
           onClick={handlePlayPause}
-          className="bg-slate-500 text-white p-2 rounded-full shadow-lg hover:bg-slate-600 transition-colors duration-300"
+          className="bg-slate-500 text-white p-2 rounded-full shadow-lg hover:bg-slate-600 transition-colors duration-300 z-15"
           aria-label={isPlaying ? "Pause music" : "Play music"}
         >
           {isPlaying ? (
@@ -181,7 +181,7 @@ const Footer = () => {
         {isVisible && (
           <button
             onClick={scrollToTop}
-            className="bg-slate-500 text-white p-2 rounded-full shadow-lg hover:bg-slate-600 transition-colors duration-300"
+            className="bg-slate-500 text-white p-2 rounded-full shadow-lg hover:bg-slate-600 transition-colors duration-300 z-15"
             aria-label="Back to top"
           >
             <svg
