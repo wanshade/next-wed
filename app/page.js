@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ButtonConfetti from "./components/confetti.jsx";
+import ButtonConfetti from "./components/Confetti.jsx";
 
 export default function Home() {
   return (
