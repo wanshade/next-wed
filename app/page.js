@@ -23,8 +23,8 @@ export default function Home() {
             <p className="great-vibes-regular text-4xl text-black">
               Karina & Wawan{" "}
             </p>
-
-            <Link href="/wedding" className="block justify-self-center z-20">
+            <div className="relative z-20">
+            <Link href="/wedding" className="block justify-self-center">
               <ButtonConfetti className="px-6 py-3 text-black font-semibold rounded-lg shadow-lg flex items-center justify-center space-x-2 transition-colors duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +44,7 @@ export default function Home() {
                 <span>Buka Undangan</span>
               </ButtonConfetti>
             </Link>
+            </div>    
           </div>
         </div>
       </div>
