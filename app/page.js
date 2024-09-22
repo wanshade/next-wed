@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ButtonConfetti from "./components/confetti";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
             </p>
 
             <Link href="/wedding" className="block justify-self-center z-20">
-              <button className="px-6 py-3 bg-stone-100 text-black font-semibold rounded-lg shadow-lg flex items-center justify-center space-x-2 transition-colors duration-300 hover:bg-stone-300">
+              <ButtonConfetti className="px-6 py-3 text-black font-semibold rounded-lg shadow-lg flex items-center justify-center space-x-2 transition-colors duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -41,7 +42,7 @@ export default function Home() {
                   <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
                 </svg>
                 <span>Buka Undangan</span>
-              </button>
+              </ButtonConfetti>
             </Link>
           </div>
         </div>
